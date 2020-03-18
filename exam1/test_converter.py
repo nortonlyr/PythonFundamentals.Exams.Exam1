@@ -45,7 +45,7 @@ class ConverterTest(unittest.TestCase):
             (1, 1.61),
             (3, 4.83),
             (26.2, 42.16),
-            (55, 88.51),
+            (55, 88.51)
         ]
 
         for mile_in, expected in test_cases:
