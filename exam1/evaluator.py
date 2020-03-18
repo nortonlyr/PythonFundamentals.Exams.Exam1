@@ -108,7 +108,12 @@ def find_duplicates(tuple_in: Tuple) -> List:
     """
 
     duplicates = []
-    for i in tuple_in:
-        if i not in duplicates:
-            duplicates.append(i)
-        return duplicates
+    unique = []
+
+    for x in tuple_in:
+        if x not in unique:
+            unique.append(x)
+        elif x not in duplicates:
+            duplicates.append(x)
+    return sorted(duplicates)
+
