@@ -13,7 +13,7 @@ def find_lowest_value(list_in: List[N]) -> N:
     """
 
     return min(list_in)
-    #return list_in.min()
+
 
 def find_highest_value(list_in: List[N]) -> N:
     """
@@ -107,9 +107,8 @@ def find_duplicates(tuple_in: Tuple) -> List:
     :return: a A list containing duplicate items in the tuple_in parameter
     """
 
- # (Not done yet)
     duplicates = []
     for i in tuple_in:
-        if tuple_in.count(i)>1:
+        if i not in duplicates:
             duplicates.append(i)
         return duplicates

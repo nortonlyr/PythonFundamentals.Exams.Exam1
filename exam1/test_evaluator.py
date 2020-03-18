@@ -78,7 +78,7 @@ class EvaluatorTest(unittest.TestCase):
                 self.assertEqual(expected, actual)
 
     def test_find_duplicates(self):
-        test_cases = [  
+        test_cases = [
             [('a', 'b', 'b', 'c', 'a'), ['a', 'b']],
             [(1, 3, 5, 7, 1, 3, 3), [1, 3]],
         ]
