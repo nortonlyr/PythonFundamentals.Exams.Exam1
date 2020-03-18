@@ -29,5 +29,4 @@ def generate_list_with_strategy(start: int, stop: int, step: int, strategy: Call
         y = [strategy(x)]
     return y
 
-# y = stratergy(x) in (range(start, stop, step))
 
