@@ -25,8 +25,7 @@ def generate_list_with_strategy(start: int, stop: int, step: int, strategy: Call
     :return: A list of integers.
     """
 
-    for x in range(start, stop, step):
-        y = [strategy(x)]
+    y = [strategy(x) for x in range(start, stop, step)]
     return y
 
 
